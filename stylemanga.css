@@ -1,0 +1,44 @@
+@import url(https://fonts.google.com/css2?family=Fredoka+One&dsiplay=swap);
+*{
+    margin: 0;
+    padding: 0;
+}
+.tittle span{
+    font-size: 110pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Georgia";
+    transition: all 1ms ease-in-out;
+}
+.tittle span::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(50px);
+}
+.tittle span::after {
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(80px);
+    transform: rotateX(50deg);
+}
+.tittle span:hover{
+    filter: contrast(800%);
+}
+.tittle span:nth-child(1){
+    color: rgb(241, 53, 53);
+}
+.tittle span:nth-child(2){
+    color: bisque;
+}
+.tittle span:nth-child(3){
+    color: rgb(30, 212, 236);
+}
+.tittle span:nth-child(4){
+    color: rgb(233, 245, 72);
+}
+.tittle span:nth-child(5){
+    color: rgb(60, 238, 114);
+}

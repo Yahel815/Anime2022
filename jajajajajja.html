@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscripción / Reinscripción - CECyTE Tepeyanco</title>
+</head>
+<body bgcolor="pink">
+    <h1>Formulario de Inscripción / Reinscripción</h1>
+    <form>
+        <h2>Datos Personales:</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="curp">CURP:</label>
+        <input type="text" id="curp" name="curp" required><br><br>
+
+        <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
+        <input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required><br><br>
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <input type="text" id="nacionalidad" name="nacionalidad" required><br><br>
+
+        <h2>Datos de Contacto:</h2>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="telefono">Teléfono Móvil:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="direccion">Dirección Completa:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <h2>Datos Académicos:</h2>
+        <label for="ultimo_grado">Último Grado de Estudios Cursado:</label>
+        <input type="text" id="ultimo_grado" name="ultimo_grado" required><br><br>
+
+        <label for="promedio">Promedio Obtenido en el Último Grado:</label>
+        <input type="number" id="promedio" name="promedio" step="0.01" required><br><br>
+
+        <label for="escuela_procedencia">Nombre de la Escuela de Procedencia:</label>
+        <input type="text" id="escuela_procedencia" name="escuela_procedencia" required><br><br>
+
+        <label for="documentos_academicos">Certificados o Documentos Académicos Requeridos:</label>
+        <input type="file" id="documentos_academicos" name="documentos_academicos" multiple><br><br>
+
+        <h2>Información sobre Padres o Tutores:</h2>
+        <label for="nombre_tutor">Nombre de Padres o Tutores:</label>
+        <input type="text" id="nombre_tutor" name="nombre_tutor" required><br><br>
+
+        <label for="ocupacion_tutor">Ocupación de Padres o Tutores:</label>
+        <input type="text" id="ocupacion_tutor" name="ocupacion_tutor" required><br><br>
+
+        <label for="telefono_tutor">Teléfono de Contacto de Padres o Tutores:</label>
+        <input type="tel" id="telefono_tutor" name="telefono_tutor" required><br><br>
+
+        <h2>Documentos Adicionales:</h2>
+        <label for="acta_nacimiento">Acta de Nacimiento:</label>
+        <input type="file" id="acta_nacimiento" name="acta_nacimiento" required><br><br>
+
+        <label for="comprobante_domicilio">Comprobante de Domicilio:</label>
+        <input type="file" id="comprobante_domicilio" name="comprobante_domicilio" required><br><br>
+
+        <label for="foto_infantil">Fotografías Recientes Tamaño Infantil:</label>
+        <input type="file" id="foto_infantil" name="foto_infantil" required><br><br>
+
+        <label for="carta_conducta">Carta de Buena Conducta:</label>
+        <input type="file" id="carta_conducta" name="carta_conducta" required><br><br>
+
+        <h2>Información Específica para Reinscripción:</h2>
+        <label for="matricula_anterior">Número de Matrícula Anterior:</label>
+        <input type="text" id="matricula_anterior" name="matricula_anterior"><br><br>
+
+        <label for="historial_academico">Historial Académico:</label><br>
+        <textarea id="historial_academico" name="historial_academico"></textarea><br><br>
+
+        <label for="observaciones">Observaciones o Necesidades Especiales:</label><br>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+
+        <h2>Otros Datos Relevantes:</h2>
+        <label for="intereses">Intereses Extracurriculares:</label>
+        <input type="text" id="intereses" name="intereses"><br><br>
+
+        <label for="deportes">Deportes Practicados:</label>
+        <input type="text" id="deportes" name="deportes"><br><br>
+
+        <label for="idiomas">Idiomas que Habla:</label>
+        <input type="text" id="idiomas" name="idiomas"><br><br>
+
+        <label for="carrera_interes">Carrera que le Gustaría Estudiar:</label><br>
+
+        <input type="checkbox" id="Programación" name="Programación" value="Programación">
+        <label for="Programación"> Programación</label><br>
+        <input type="checkbox" id="Animación Digital " name="Animación Digital" value="Animación Digital">
+        <label for="Animación Digital">Animación Digital</label><br>
+        <input type="checkbox" id="Producción de prendas de vestir" name="Producción de prendas de vestir" value="Programación de prendas de vestir">
+        <label for="Producción de prendas de vestir"> Producción de prendas de vestir</label><br>
+
+        <input type="submit" value="Confirmar Envío">
+        <input type="reset" value="Borrar Todo">
+    </form>
+
+    <h2>Información no enviada en el formulario:</h2>
+    <div id="formularioNoEnviado"></div>
+
+    <button id="verDocumentos">Ver Documentos Subidos</button>
+    <br><br>
+    <label for="corregirDatos">¿Necesitas corregir algún dato?</label>
+    <select id="corregirDatos" name="corregirDatos">
+        <option value="nombre">Nombre</option>
+        <option value="apellido">Apellido</option>
+        <!-- Agrega más opciones según los campos que desees permitir corregir -->
+    </select>
+    <button id="corregirBtn">Corregir</button>
+
+    <script>
+        const form = document.querySelector('form');
+        const formularioNoEnviado = document.getElementById('formularioNoEnviado');
+        const verDocumentosBtn = document.getElementById('verDocumentos');
+        const corregirBtn = document.getElementById('corregirBtn');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            formularioNoEnviado.innerHTML = '';
+
+            const nombre = form.nombre.value;
+            const apellido = form.apellido.value;
+            const correo = form.correo.value;
+
+            if (!nombre || !apellido || !correo) {
+                formularioNoEnviado.innerHTML = 'Por favor, completa los campos obligatorios antes de enviar el formulario.';
+            } else {
+                alert('Formulario enviado correctamente');
+                form.submit();
+            }
+        });
+
+        verDocumentosBtn.addEventListener('click', () => {
+            window.location.href = 'verDocumentos.html';
+        });
+
+        corregirBtn.addEventListener('click', () => {
+            const campoCorregir = document.getElementById('corregirDatos').value;
+            if (campoCorregir === 'nombre') {
+                window.location.href = 'corregirNombre.html';
+            } else if (campoCorregir === 'apellido') {
+                window.location.href = 'corregirApellido.html';
+            }
+        });
+    </script>
+
+    <a href="Inscripción 1.html">Volver a escribir</a>
+</body>
+</html>

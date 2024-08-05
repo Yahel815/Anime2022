@@ -1,0 +1,89 @@
+@import url(https://fonts.google.com/css2?family=Fredoka+One&dsiplay=swap);
+*{
+    margin: 0;
+    padding: 0;
+}
+.tittle span{
+    font-size: 90pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Georgia";
+    transition: all 1ms ease-in-out;
+}
+.tittle span::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(50px);
+}
+.tittle span::after {
+    content: var(--l);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    filter: blur(80px);
+    transform: rotateX(50deg);
+}
+.tittle span:hover{
+    filter: contrast(1000%);
+}
+.tittle span:nth-child(1){
+    color: aqua;
+}
+.tittle span:nth-child(2){
+    color: aqua;
+}
+.tittle span:nth-child(3){
+    color: aqua;
+}
+.tittle span:nth-child(4){
+    color: aqua;
+}
+.tittle span:nth-child(5){
+    color: aqua;
+}
+.tittle span:nth-child(6){
+    color: aqua;
+}
+.tittle span:nth-child(7){
+    color: aqua;
+}
+.tittle span:nth-child(8){
+    color: aqua;
+}
+.tittle span:nth-child(9){
+    color: aqua;
+}
+.tittle span:nth-child(10){
+    color: aqua;
+}
+.tittle span:nth-child(11){
+    color: aqua;
+}
+.tittle span:nth-child(12){
+    color: aqua;
+}
+.tittle span:nth-child(13){
+    color: aqua;
+}
+.tittle span:nth-child(14){
+    color: aqua;
+}
+.tittle span:nth-child(15){
+    color: aqua;
+}
+.tittle span:nth-child(16){
+    color: aqua;
+}
+.tittle span:nth-child(17){
+    color: aqua;
+}
+.tittle span:nth-child(18){
+    color: aqua;
+}
+.tittle span:nth-child(19){
+    color: aqua;
+}
+.tittle span:nth-child(20){
+    color: rgb(60, 238, 114);
+}
